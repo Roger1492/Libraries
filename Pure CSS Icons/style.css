@@ -34,14 +34,14 @@ div{
 }
 
 .times{
-	width: 70px;
+	width: 75px;
 	height: 8px;
 	background: #333;
-	transform: rotateZ(45deg) translate(8px, 22px);
+	transform: rotateZ(45deg) translate(7px, 22px);
 }
 .times::before{
 	content: "";
-	width: 70px;
+	width: 75px;
 	height: 8px;
 	background: #333;
 	position: absolute;
@@ -211,18 +211,18 @@ div{
 .home::before{
 	content: "";
 	width: 24px;
-	height: 6px;
+	height: 4px;
 	background: #333;
 	position: absolute;
-	transform: translate(-6px,-12px) rotate(-27deg);
+	transform: translate(-5px,-10px) rotate(-27deg);
 }
 .home::after{
 	content: "";
 	width: 24px;
-	height: 6px;
+	height: 4px;
 	background: #333;
 	position: absolute;
-	transform: translate(14px,-12px) rotate(25deg);
+	transform: translate(15px,-10px) rotate(25deg);
 }
 .home_1{
 	content: "";
@@ -231,7 +231,7 @@ div{
 	border-width: 8px 17px;
 	border-style: solid;
 	border-color: transparent transparent #333 transparent;
-	transform: translate(7px,-11px);
+	transform: translate(8px,-11px);
 }
 .home_1::before{
 	width: 10px;
@@ -242,22 +242,22 @@ div{
 	transform: translate(-4px,15px);
 }
 .home_1::after{
-	width: 7px;
-	height: 10px;
+	width: 5px;
+	height: 8px;
 	background: #333;
 	position: absolute;
 	content: "";
-	transform: translate(10px,-11px);
+	transform: translate(10px,-7px);
 }
 
-.location{
+.map-maker{
 	width: 26px;
 	height: 26px;
 	border-radius: 50%;
 	background: #333;
 	transform: translate(12px, 2px);
 }
-.location::before{
+.map-maker::before{
 	content: "";
 	width: 0;
 	height: 0;
@@ -267,14 +267,14 @@ div{
 	transform: translate(1px, 18px);
 	position: absolute;
 }
-.location::after{
+.map-maker::after{
 	content: "";
 	width: 15px;
 	height: 15px;
 	border-radius: 50%;
 	background: #fff;
 	position: absolute;
-	transform: translate(6px,6px);
+	transform: translate(5.5px,6px);
 }
 
 .clock{
@@ -285,32 +285,32 @@ div{
 	transform: translate(2px, 2px);
 }
 .clock::before{
-	width: 16px;
+	width: 18px;
 	height: 3px;
 	background: #333;
 	position: absolute;
 	content: "";
-	transform: translate(16px,15px);
+	transform: translate(16px,17px);
 	border-radius: 3px;
 }
 .clock::after{
-	width: 16px;
+	width: 18px;
 	height: 3px;
 	background: #333;
 	position: absolute;
 	content: "";
-	transform: translate(8px,8px) rotate(90deg);
+	transform: translate(8px,9px) rotate(90deg);
 	border-radius: 3px;
 }
-.mailbox{
+.envelope{
 	width: 40px;
 	height: 26px;
 	border: 4px solid #333;
-	transform: translate(1px, 10px);
+	transform: translate(1px, 9px);
 	border-radius: 4px;
 }
-.mailbox::before{
-	width: 27px;
+.envelope::before{
+	width: 28px;
 	height: 4px;
 	background: #333;
 	position: absolute;
@@ -318,9 +318,9 @@ div{
 	border-radius: 2px;
 	transform: rotate(30deg) translate(-2px,6px);
 }
-.mailbox::after{
+.envelope::after{
 	content: "";
-	width: 27px;
+	width: 28px;
 	height: 4px;
 	background: #333;
 	position: absolute;
@@ -380,6 +380,7 @@ div{
 	width: 22px;
 	height: 26px;
 	border: 3px solid #333;
+	border-radius: 4px;
 	transform: translate(10px, 12px);
 	box-shadow: 0 -8px 0 -3px #333;
 }
@@ -389,12 +390,14 @@ div{
 	height: 3px;
 	background: #333;
 	position: absolute;
+	border-radius: 4px;
 	transform: translate(-6px,-3px);
 }
 .recycle-bin::after{
 	content: "";
 	width: 3px;
 	height: 20px;
+	border-radius: 2px;
 	background: #333;
 	position: absolute;
 	transform: translate(4px, 2px);
@@ -451,7 +454,7 @@ div{
 	height: 3px;
 	background: #333;
 	position: absolute;
-	transform: translate(3px, 10px);
+	transform: translate(2.5px, 10px);
 }
 .zoom-in::after{
 	content: "";
@@ -459,7 +462,7 @@ div{
 	height: 16px;
 	background: #333;
 	position: absolute;
-	transform: translate(10px, 3px);
+	transform: translate(9.5px, 3px);
 }
 .zoom-in_1{
 	position: absolute;
@@ -497,7 +500,7 @@ div{
 	width: 26px;
 	height: 20px;
 	background: #333;
-	transform: translate(12px,20px);
+	transform: translate(12px, 22px);
 }
 .lock::before{
 	content: "";
@@ -512,24 +515,18 @@ div{
 	width: 26px;
 	height: 20px;
 	background: #333;
-	transform: translate(6px, 20px);
+	transform: translate(6px, 22px);
 }
 .lock-open::before{
 	content: "";
 	width: 14px;
-	height: 26px;
-	border: 4px solid #333;
+	height: 13px;
 	position: absolute;
-	border-radius: 16px;
-	transform: translate(16px, -14px);
-}
-.lock-open::after{
-	content: "";
-	width: 14px;
-	height: 26px;
-	background: #fff;
-	position: absolute;
-	transform: translate(24px);
+	border-top: 4px solid #333;
+	border-left: 4px solid #333;
+	border-right: 4px solid #333;
+	border-radius: 10px 10px 0 0;
+	transform: translate(18px, -17px);
 }
 
 .alarm{
@@ -574,35 +571,219 @@ div{
 	height: 2px;
 	background: #fff;
 	position: absolute;
-	transform: translate(17px,15px);
+	border-radius: 2px;
+	transform: translate(16px,15px);
 }
 .alarm2::before{
 	content: "";
 	position: absolute;
 	width: 2px;
+	border-radius: 2px;
 	height: 12px;
 	background: #fff;
-	transform: rotate(-45deg) translate(2px,-10px);
+	transform: rotate(-45deg) translate(3px,-9px);
 }
 
-.usb{
-	width: 4px;
-	height: 40px;
-	border-radius: 2px;
-	background: red;
-	transform: translate(23px, 5px);
-	position: relative;
+.user{
+	width: 30px;
+	height: 18px;
+	background: #333;
+	border-radius: 15px 15px 0 0;
+	transform: translate(10px, 24px);
 }
-.usb::before,
-.usb::after{
+.user::before{
 	content: "";
-	width: 40px;
-	height: 4px;
-	/* border-radius: 2px; */
-	background: red;
 	position: absolute;
-	transform: rotate(120deg) translate(22px, 7px);
+	width: 12px;
+	height: 14px;
+	background: #333;
+	border: 2px solid #fff;
+	border-radius: 9px;
+	transform: translate(7px, -14px);
 }
-.usb::before{
-	transform: rotate(-120deg) translate(-7px,-26px);
+
+.heart{
+	position: relative;
+	width: 20px;
+	height: 35px;
+	background: #333;
+	border-radius: 10px 10px 0 0;
+	transform: translate(21px, 6px) rotate(45deg);
+}
+.heart::before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 35px;
+	background: #333;
+	border-radius: 10px 10px 0 0;
+	transform: rotate(-90deg) translate(-8px,-8px);
+}
+
+.phone{
+	width: 20px;
+	height: 30px;
+	border-width: 5px 2px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 2px;
+	transform: translate(13px,4px);
+}
+.phone::before{
+	content: "";
+	width: 3px;
+	height: 3px;
+	background: #fff;
+	position: absolute;
+	border-radius: 50%;
+	transform: translate(8px, 31px);
+}
+.phone::after{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 1px;
+	background: #fff;
+	transform: translate(5px, -3px);
+}
+
+.computer{
+	width: 36px;
+	height: 18px;
+	border: 3px solid #333;
+	transform: translate(4px, 10px);
+	border-radius: 4px;
+}
+.computer::before{
+	content: "";
+	width: 14px;
+	height: 5px;
+	background: #333;
+	position: absolute;
+	transform: translate(12px, 20px);
+}
+.computer::after{
+	content: "";
+	width: 28px;
+	height: 5px;
+	background: #333;
+	position: absolute;
+	transform: translate(5px, 25px);
+	border-radius: 2px;
+}
+
+.bookmark{
+	width: 0;
+	height: 0;
+	border-width: 15px 12px;
+	border-style: solid;
+	border-color: #333 #333 transparent #333;
+	transform: translate(12px, 10px);
+}
+
+.location-arrow{
+	width: 0;
+	height: 0;
+	border-width: 10px 20px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	transform: rotate(-20deg) translate(0px, 18px);
+}
+.location-arrow::before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-width: 10px 20px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	transform: rotate(152deg) translate(10px, 28px);
+}
+
+.mouse{
+	width: 20px;
+	height: 35px;
+	border: 3px solid #333;
+	border-radius: 20px;
+	transform: translate(10px, 4px);
+}
+.mouse::before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 3px;
+	background: #333;
+	transform: translateY(10px);
+}
+.mouse::after{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 10px;
+	background: #333;
+	transform: translateX(8px);
+}
+
+.image{
+	width: 44px;
+	height: 32px;
+	border: 1px solid #333;
+	transform: translate(2px,9px);
+	overflow: hidden;
+}
+.image::before{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #333;
+	border-radius: 3px;
+	transform: translate(30px, 5px);
+}
+.image-1{
+	width: 22px;
+	height: 22px;
+	background: #333;
+	transform: rotate(50deg) translate(16px, 11px);
+	box-shadow: 16px -13px 0 0 #333;
+}
+
+.qrcode{
+	width: 4px;
+	height: 4px;
+	background: #333;
+	box-shadow: 0 0 0 3px #fff, 0 0 0 6px #333,
+				20px 0 0 0 #333 ,20px 0 0 3px #fff, 20px 0 0 6px #333,
+				0 20px 0 0 #333, 0 20px 0 3px #fff, 0 20px 0 6px #333,
+				14px 15px 0 1px #333, 14px 21px 0 1px #333, 14px 25px 0 1px #333,
+				18px 15px 0 1px #333, 22px 20px 0 1px #333, 26px 15px 0 1px #333,
+				20px 27px 0 -1px #333, 24px 27px 0 -1px #333, 28px 27px 0 -1px #333,
+				28px 23px 0 -1px #333;
+	transform: translate(12px, 12px);
+}
+
+.server{
+	width: 40px;
+	height: 8px;
+	background: #333;
+	transform: translate(5px, 8px);
+	box-shadow: 0 12px 0 0 #333, 0 24px 0 0 #333;
+}
+.server::before{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	transform: translate(6px, 2px);
+	box-shadow: 0 12px 0 0 #fff, 0 24px 0 0 #fff;
+}
+.server::after{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #fff;
+	transform: translate(32px, 2px);
+	box-shadow: 0 12px 0 0 #fff, 0 24px 0 0 #fff;
 }
