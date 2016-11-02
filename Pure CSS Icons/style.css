@@ -1038,6 +1038,35 @@ div{
 	box-shadow: 0 0 0 2px #fff;
 }
 
+.bell{
+	border-bottom:  36px solid #333;
+	border-left:  15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 15px;
+	border-radius: 15px;
+	transform: translate(2px, 9px);
+}
+.bell::before{
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 12px;
+	background: #fff;
+	border: 2px solid #333;
+	border-radius: 50%;
+	transform: translate(-11px, 22px);
+}
+.bell::after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	transform: translate(3px, -5px);
+}
+
 .table{
 	width: 40px;
 	height: 4px;
