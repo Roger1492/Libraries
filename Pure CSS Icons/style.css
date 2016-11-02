@@ -8,14 +8,12 @@ div{
 	float: left;
 	border: 1px solid red;
 	margin: 10px;
-	/* overflow: hidden; */
 }
 .plus{
 	width: 50px;
 	height: 8px;
 	background: #333;
 	transform: translateY(21px);
-	/* transform: scale(.5,.5); */
 }
 .plus::before{
 	content: "";
@@ -80,6 +78,14 @@ div{
 }
 
 .pause{
+	width: 12px;
+	height: 30px;
+	background: #333;
+	transform: translate(10px,10px);
+	box-shadow: 16px 0 0 0 #333;
+}
+
+.stop{
 	width: 20px;
 	height: 20px;
 	background: #333;
@@ -762,11 +768,46 @@ div{
 	transform: translate(12px, 12px);
 }
 
+.refresh{
+	width: 24px;
+	height: 24px;
+	border: 8px solid #333;
+	border-radius: 50%;
+	transform: translate(7px, 7px);
+	z-index: -99;
+}
+.refresh::before{
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 8px;
+	background: #fff;
+	transform: translate(-8px, 8px);
+}
+.refresh_1{
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	position: absolute;
+	z-index: 99;
+	border-color: #333 transparent transparent transparent;
+	transform: rotate(135deg) translate(-11.6px, 15.3px);
+}
+.refresh_1::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color: #333 transparent transparent transparent;
+	transform: rotate(180deg) translate(43.4px, 32.3px);
+}
+
 .tag{
 	width: 18px;
 	height: 30px;
 	background: #333;
-	transform: rotate(45deg) translate(19px, 1px);
+	transform: rotate(-45deg) translate(4px, 23px);
 }
 .tag::before{
 	content: "";
@@ -779,6 +820,36 @@ div{
 	transform: translate(-7px, -25px) rotate(-90deg);
 }
 .tag::after{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(6px, -5px);
+}
+
+.tags{
+	width: 18px;
+	height: 30px;
+	background: #333;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #fff;
+	box-shadow: 2px 2px 0 0 #333;
+	transform: rotate(-45deg) translate(4px, 23px);
+}
+.tags::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 9px 16px;
+	border-style: solid;
+	border-color: transparent transparent transparent #333;
+	transform: translate(-7px, -25px) rotate(-90deg);
+}
+.tags::after{
 	content: "";
 	position: absolute;
 	width: 6px;
@@ -872,10 +943,10 @@ div{
 }
 
 .chart{
-	width: 30px;
+	width: 36px;
 	height: 1px;
 	background: #333;
-	transform: translate(10px, 40px);
+	transform: translate(8px, 40px);
 }
 .chart::before{
 	content: "";
@@ -886,7 +957,8 @@ div{
 	transform: translate(5px, -9px);
 	box-shadow: 0 -10px 0 0 #333,
 				7px 0 0 0 #333, 7px -10px 0 0 #333, 7px -20px 0 0 #333,
-				14px 0 0 0 #333, 14px -6px 0 0 #333;
+				14px 0 0 0 #333, 14px -6px 0 0 #333,
+				21px 0 0 0 #333;
 }
 
 .funnel{
@@ -964,4 +1036,279 @@ div{
 	border-bottom:  10px solid #333;
 	transform: translate(14px, 0px);
 	box-shadow: 0 0 0 2px #fff;
+}
+
+.table{
+	width: 40px;
+	height: 4px;
+	background: #333;
+	transform: translate(5px, 13px);
+}
+.table::before{
+	content: "";
+	width: 40px;
+	height: 2px;
+	background: #333;
+	position: absolute;
+	transform: translateY(8px);
+	box-shadow: 0 6px 0 0 #333, 0 12px 0 0 #333;
+}
+.table::after{
+	content: "";
+	position: absolute;
+	width: 2px;
+	height: 20px;
+	background: #333;
+	box-shadow: 8px 0 0 0 #333, 18px 0 0 0 #333, 28px 0 0 0 #333, 38px 0 0 0 #333;
+}
+
+.eraser{
+	width: 16px;
+	height: 16px;
+	border-width: 20px 2px 2px 2px;
+	border-style: solid;
+	border-color: #333;
+	transform: skew(-30deg) translate(18px, 5px);
+}
+
+.floopy{
+	width: 2px;
+	height: 10px;
+	background: #333;
+	transform: translate(10px, 10px);
+	box-shadow: 0 10px 0 0 #333, 0 20px 0 0 #333,
+				30px 10px 0 0 #333, 30px 20px 0 0 #333,
+				5px 2px 0 0 #333, 7px 2px 0 0 #333, 9px 2px 0 0 #333,
+				16px 2px 0 0 #333, 5px 20px 0 0 #333,
+				23px 20px 0 0 #333;
+}
+.floopy::before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: #333;
+	box-shadow: 4px 0 0 0 #333, 14px 0 0 0 #333,
+				6px 20px 0 0 #333, 14px 20px 0 0 #333,
+				0 30px 0 0 #333, 10px 30px 0 0 #333,
+				20px 30px 0 0 #333, 22px 30px 0 0 #333,
+				6px 10px 0 0 #333;
+}
+.floopy::after{
+	content: "";
+	position: absolute;
+	width: 13.5px;
+	height: 2px;
+	background: #333;
+	transform: rotate(50deg) translate(16.5px, -12.5px);
+}
+
+.bus{
+	width: 26px;
+	height: 15px;
+	border-width:10px 2px 13px 2px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 15px 15px 5px 5px / 12px 12px 5px 5px;
+	transform: translate(10px, 4px);
+}
+.bus::before{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 4px;
+	background: #fff;
+	border-radius: 2px;
+	transform: translate(5.5px, -6px);
+}
+.bus::after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(0px, 18px);
+	box-shadow: 21px 0 0 0 #fff,
+				2px 9px 0 0 #333, 18px 9px 0 0 #333;
+}
+
+.truck{
+	width: 12px;
+	height: 12px;
+	background: #333;
+	transform: translate(6px, 22px);
+	box-shadow: 12px 0 0 0 #333, 24px 0 0 0 #333,
+				12px -12px 0 0 #333, 24px -12px 0 0 #333;
+}
+.truck::before,
+.truck::after{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	transform: translate(3px, 10px);
+}
+.truck::after{
+	transform: translate(21px, 10px);
+}
+.truck_1{
+	position: absolute;
+	border-radius: 50%;
+	transform: rotate(-85deg) translate(10px, 1px);
+	width: 10px;
+	height: 10px;
+	border: 2px solid;
+	border-color: #333 #333 transparent transparent;
+}
+
+.train{
+	width: 20px;
+	height: 10px;
+	border-width: 5px 3px 16px 3px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 5px;
+	transform: translate(10px, 5px);
+}
+.train::before{
+	content: "";
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(6px, 14px);
+}
+.train::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 10px solid;
+	border-color:  transparent transparent #333 transparent;
+	transform: translate(0px,11px);
+}
+
+.umbrella{
+	width: 42px;
+	height: 20px;
+	background: #333;
+	border-radius: 20px 20px 0 0;
+	transform: translate(4px, 6px);
+}
+.umbrella::before{
+	content: "";
+	position: absolute;
+	width: 14px;
+	height: 8px;
+	background: #fff;
+	border-radius: 7px 7px 0 0;
+	transform: translate(0px, 15px);
+	box-shadow: 14px 0 0 0 #fff, 28px 0 0 0 #fff;
+}
+.umbrella::after{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 40px;
+	border: 2px solid;
+	border-color: transparent #333 #333 transparent;
+	border-radius: 0 0 15px 15px;
+	transform: translate(3px, -3px);
+}
+
+.warning{
+	width: 0;
+	height: 0;
+	border-width: 40px 20px;
+	border-style: solid;
+	border-color: transparent transparent #333 transparent;
+	transform: translate(5px, -35px);
+}
+.warning::before{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	transform: translate(-3px, 30px);
+	box-shadow: 0 -8px 0 0  #fff, 0 -14px 0 0 #fff;
+}
+
+.vphone{
+	width: 8px;
+	height: 20px;
+	border-width: 10px 0 10px 4px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 8px 5px 5px 8px;
+	transform: translate(17px, 5px) rotate(-45deg);
+}
+
+.tv{
+	width: 34px;
+	height: 20px;
+	border: 3px solid #333;
+	border-radius: 3px;
+	transform: translate(5px, 10px);
+}
+.tv::before{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #333;
+	transform: translate(15px, 23px);
+}
+.tv::after{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 4px;
+	background: #333;
+	transform: translate(5px, 26px);
+}
+
+.spinner{
+	width: 10px;
+	height: 10px;
+	background: #333;
+	border-radius: 50%;
+	transform: translate(20px, 5px);
+	box-shadow: -11px 6px 0 -1px #333,
+				-15px 16px 0 -2px #333,
+				-10px 25px 0 -2px #333,
+				10px 25px 0 -2px #333,
+				0px 29px 0 -2px #333,
+				14px 16px 0 -2px #333,
+				10px 6px 0 -2px #333;
+}
+
+.sign-in{
+	width: 12px;
+	height: 25px;
+	border: 2px solid;
+	border-color: #333 #333 #333 transparent;
+	border-radius: 0 5px 5px 0;
+	transform: translate(25px, 10px);
+}
+.sign-in::before{
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 12px;
+	background: #333;
+	transform: translate(-20px, 7px);
+}
+.sign-in::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+	border-color: transparent transparent transparent #333;
+	transform: translate(-6px, -2px);
 }
