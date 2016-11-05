@@ -2142,17 +2142,17 @@ div{
 }
 
 .clone{
-	width: 25px;
-	height: 25px;
+	width: 20px;
+	height: 20px;
 	border: 2px solid #333;
 	border-radius: 2px;
-	transform: translate(5px, 5px);
+	transform: translate(11px, 10px);
 }
 .clone::before{
 	content: "";
 	position: absolute;
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 	border: 2px solid #333;
 	background: #fff;
 	transform: translate(3px, 3px);

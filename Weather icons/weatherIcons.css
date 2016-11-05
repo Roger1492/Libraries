@@ -1,0 +1,260 @@
+div{
+	width: 300px;
+	height: 400px;
+	border: 1px solid #333;
+	display: inline-block;
+	background: lightblue;
+	position: relative;
+}
+
+/* sun */
+.sunlight{
+	width: 270px;
+	height: 50px;
+	background-image: -webkit-linear-gradient(top, red,blue);
+	transform: translate(15px, 150px);
+	animation: sunlight 5s infinite linear;
+}
+.sunlight::before{
+	content: "";
+	position: absolute;
+	width: 270px;
+	height: 50px;
+	background-image: -webkit-linear-gradient(top, green 10%, yellow 90%);
+	transform: rotate(90deg);
+}
+.sun{
+	width: 150px;
+	height: 150px;
+	background-image: -webkit-linear-gradient(left, #F4EC18,#BABA18);
+	border-radius: 50%;
+	transform: translate(60px, -60px);
+}
+
+/* light-rainy */
+
+.light-rainy{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(80px, 100px);
+	box-shadow: 40px 0 0 5px #fff, 20px -30px 0 0 #fff,
+			70px -40px 0 5px #fff, 80px 10px 0 0 #fff,
+			110px -20px 0 0 #fff;
+	z-index: 9;
+	animation: rainy 5s infinite linear;
+}
+
+.light-drop-rain{
+	width: 150px;
+	height: 200px;
+	transform: translate(60px, 60px);
+	z-index: -9;
+}
+.light-drop-rain > nav{
+	width: 10px;
+	height: 20px;
+	background: blue;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+}
+.light-drop-rain1{
+	transform: translate(0px,0px);
+	animation: drop-rain1 1s infinite linear;
+}
+.light-drop-rain2{
+	transform: translate(30px,0px);
+	animation:  drop-rain2 1s .8s infinite linear;
+}
+.light-drop-rain3{
+	transform: translate(60px,0px);
+	animation: drop-rain3 1s .2s infinite linear;
+}
+.light-drop-rain4{
+	transform: translate(90px,0px);
+	animation: drop-rain4 1s .5s infinite linear;
+}
+.light-drop-rain5{
+	transform: translate(120px,0px);
+	animation: drop-rain5 1s .7s infinite linear;
+}
+
+@keyframes drop-rain1 {
+	0% {transform: translate(0px, 0px); opacity: 1;}
+	25% {transform: translate(10px, 20px); opacity: 1;}
+	50% {transform: translate(20px, 40px); opacity: .5;}
+	75% {transform: translate(30px, 70px); opacity: .3;}
+	100% {transform: translate(40px, 100px); opacity: 0;}
+}
+@keyframes drop-rain2 {
+	0% {transform: translate(30px, 0px); opacity: 1;}
+	25% {transform: translate(40px, 20px); opacity: 1;}
+	50% {transform: translate(50px, 40px); opacity: .6;}
+	75% {transform: translate(60px, 70px); opacity: .3;}
+	100% {transform: translate(70px, 100px); opacity: 0;}
+}
+@keyframes drop-rain3 {
+	0% {transform: translate(60px, 0px); opacity: 1;}
+	25% {transform: translate(70px, 20px); opacity: 1;}
+	50% {transform: translate(80px, 40px); opacity: .6;}
+	75% {transform: translate(90px, 70px); opacity: .3;}
+	100% {transform: translate(100px, 100px); opacity: 0;}
+}
+@keyframes drop-rain4 {
+	0% {transform: translate(90px, 0px); opacity: 1;}
+	25% {transform: translate(100px, 20px); opacity: 1;}
+	50% {transform: translate(110px, 40px); opacity: .6;}
+	75% {transform: translate(120px, 70px); opacity: .3;}
+	100% {transform: translate(130px, 100px); opacity: 0;}
+}
+@keyframes drop-rain5 {
+	0% {transform: translate(120px, 0px); opacity: 1;}
+	25% {transform: translate(130px, 20px); opacity: 1;}
+	50% {transform: translate(140px, 40px); opacity: .6;}
+	75% {transform: translate(150px, 70px); opacity: .3;}
+	100% {transform: translate(160px, 100px); opacity: 0;}
+}
+@keyframes rainy{
+	50% {transform: translate(30px, 80px);}
+}
+
+/* heavy-rainy */
+.heavy-rainy{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(80px, 100px);
+	box-shadow: 40px 0 0 5px #fff, 20px -30px 0 0 #fff,
+			70px -40px 0 5px #fff, 80px 10px 0 0 #fff,
+			110px -20px 0 0 #fff;
+	z-index: 9;
+	animation: rainy 5s infinite linear;
+}
+
+.heavy-drop-rain{
+	width: 150px;
+	height: 200px;
+	transform: translate(60px, 60px);
+	z-index: -9;
+}
+.heavy-drop-rain > nav{
+	width: 7px;
+	height: 20px;
+	background: blue;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+}
+.heavy-drop-rain1{
+	transform: translate(0px,0px);
+	animation: drop-rain1 1s infinite linear;
+}
+.heavy-drop-rain2{
+	transform: translate(15px,0px);
+	animation:  drop-rain2 1s .8s infinite linear;
+}
+.heavy-drop-rain3{
+	transform: translate(30px,0px);
+	animation: drop-rain3 1s .2s infinite linear;
+}
+.heavy-drop-rain4{
+	transform: translate(45px,0px);
+	animation: drop-rain4 1s .6s infinite linear;
+}
+.heavy-drop-rain5{
+	transform: translate(60px,0px);
+	animation: drop-rain5 1s .3s infinite linear;
+}
+.heavy-drop-rain6{
+	transform: translate(75px,0px);
+	animation: drop-rain6 1s .7s infinite linear;
+}
+.heavy-drop-rain7{
+	transform: translate(90px,0px);
+	animation:  drop-rain7 1s .2s infinite linear;
+}
+.heavy-drop-rain8{
+	transform: translate(105px,0px);
+	animation: drop-rain8 1s .5s infinite linear;
+}
+.heavy-drop-rain9{
+	transform: translate(120px,0px);
+	animation: drop-rain9 1s .7s infinite linear;
+}
+.heavy-drop-rain10{
+	transform: translate(135px,0px);
+	animation: drop-rain10 1s .4s infinite linear;
+}
+
+@keyframes drop-rain1 {
+	0% {transform: translate(0px, 0px); opacity: 1;}
+	100% {transform: translate(100px, 150px); opacity: 0;}
+}
+@keyframes drop-rain2 {
+	0% {transform: translate(15px, 0px); opacity: 1;}
+	100% {transform: translate(90px, 160px); opacity: 0;}
+}
+@keyframes drop-rain3 {
+	0% {transform: translate(30px, 0px); opacity: 1;}
+	100% {transform: translate(110px, 140px); opacity: 0;}
+}
+@keyframes drop-rain4 {
+	0% {transform: translate(45px, 0px); opacity: 1;}
+	100% {transform: translate(120px, 170px); opacity: 0;}
+}
+@keyframes drop-rain5 {
+	0% {transform: translate(60px, 0px); opacity: 1;}
+	100% {transform: translate(140px, 180px); opacity: 0;}
+}
+@keyframes drop-rain6 {
+	0% {transform: translate(75px, 0px); opacity: 1;}
+	100% {transform: translate(150px, 150px); opacity: 0;}
+}
+@keyframes drop-rain7 {
+	0% {transform: translate(90px, 0px); opacity: 1;}
+	100% {transform: translate(160px, 200px); opacity: 0;}
+}
+@keyframes drop-rain8 {
+	0% {transform: translate(105px, 0px); opacity: 1;}
+	100% {transform: translate(170px, 210px); opacity: 0;}
+}
+@keyframes drop-rain9{
+	0% {transform: translate(120px, 0px); opacity: 1;}
+	100% {transform: translate(178px, 204px); opacity: 0;}
+}
+@keyframes drop-rain10 {
+	0% {transform: translate(135px, 0px); opacity: 1;}
+	100% {transform: translate(190px, 220px); opacity: 0;}
+}
+@keyframes rainy{
+	50% {transform: translate(30px, 80px);}
+}
+
+
+
+/* thunder */
+.thunder{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(80px, 100px);
+	box-shadow: 40px 0 0 5px #fff, 20px -30px 0 0 #fff,
+			70px -40px 0 5px #fff, 80px 10px 0 0 #fff,
+			110px -20px 0 0 #fff;
+	z-index: 9;
+}
+.thunder::before,
+.thunder::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	
+}
