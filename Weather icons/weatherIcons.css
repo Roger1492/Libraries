@@ -249,6 +249,7 @@ div{
 			70px -40px 0 5px #fff, 80px 10px 0 0 #fff,
 			110px -20px 0 0 #fff;
 	z-index: 9;
+	animation: thunder 4.5s infinite linear;
 }
 .thunder::before,
 .thunder::after{
@@ -256,5 +257,24 @@ div{
 	position: absolute;
 	width: 0;
 	height: 0;
-	
+	border-width: 80px 10px;
+	border-style: solid;
+	border-color: transparent transparent yellow transparent;
+	transform: rotate(45deg) translate(10px, -150px);
+	animation: thunder-ab 3s infinite linear;
+}
+.thunder::after{
+	transform:  rotate(225deg) translate(-28px,5px);
+}
+
+@keyframes thunder{
+	50%{ transform: translate(50px, 70px); }
+}
+@keyframes thunder-ab{
+	0%,100%{opacity: 0;}
+	49% {opacity: 0;}
+	56%{ opacity: 1; }
+	57% {opacity: 0;}
+	58% {opacity: 1;}
+	59% {opacity: 0;}
 }
