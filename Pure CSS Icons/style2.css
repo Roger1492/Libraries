@@ -1,0 +1,156 @@
+.comment{
+	width: 30px;
+	height: 22px;
+	background: #333;
+	border-radius: 50%;
+	transform: translate(10px, 10px);
+}
+.comment::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 8px solid;
+	border-color: transparent transparent #333 transparent;
+	transform: rotate(-35deg) translate(-9px, 7px);
+}
+
+.commenting{
+	width: 30px;
+	height: 22px;
+	background: #333;
+	border-radius: 50%;
+	transform: translate(10px, 10px);
+}
+.commenting::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border: 8px solid;
+	border-color: transparent transparent #333 transparent;
+	transform: rotate(-35deg) translate(-9px, 7px);
+}
+.commenting::after{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(5px, 8px);
+	box-shadow: 8px 0 0 0 #fff, 16px 0 0 0 #fff;
+}
+
+.cloud{
+	width: 45px;
+	height: 15px;
+	background: #333;
+	border-radius: 8px;
+	transform: translate(2px, 25px);
+}
+.cloud::before{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #333;
+	border-radius: 50% 50% 0 0;
+	transform: translate(5px, -11px);
+}
+.cloud::after{
+	content: "";
+	position: absolute;
+	background: #333;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transform: translate(28px, -6px);
+}
+
+.pencil{
+	width: 0.5px;
+	height: 45px;
+	border: 0.7px solid #333;
+	transform: rotate(45deg) translate(18px, -15px);
+}
+.pencil::before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 1.5px;
+	border: 0.7px solid #333;
+	transform: translate(-0.7px, -3.6px);
+	border-radius: 50% 50% 0 0;
+}
+.pencil::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 7px 2px;
+	border-style: solid;
+	border-color: #333 transparent transparent transparent;
+	transform: translate(-0.7px, 45.8px);
+}
+.pencil1{
+	width: 0.5px;
+	height: 45px;
+	border: 0.7px solid #333;
+	transform: rotate(45deg) translate(-12.5px, -47.7px);
+}
+
+.bullseye{
+	width: 5px;
+	height: 5px;
+	background: #333;
+	border-radius: 50%;
+	transform: translate(22px, 22px);
+	box-shadow: 0 0 0 2px #fff, 0 0 0 4px #333,
+				0 0 0 6px #fff, 0 0 0 8px #333,
+				0 0 0 10px #fff, 0 0 0 12px #333,
+				0 0 0 14px #fff, 0 0 0 16px #333;
+}
+
+.compass{
+	width: 30px;
+	height: 30px;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transform: translate(7px, 7px);
+	box-shadow: 0 0 0 0.3px #fff, 0 0 0 1px #333;
+}
+.compass::before,
+.compass::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 10px 3px;
+	border-style: solid;
+	border-color: transparent transparent #333 transparent;
+	transform: rotate(45deg) translate(12px, -15px);
+}
+.compass::after{
+	transform: rotate(-135deg) translate(-12px, -5px);
+}
+.compass1{
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 4px 1px;
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	transform: rotate(-135deg) translate(-6.5px, 22px);
+}
+
+.database{
+	width: 25px;
+	height: 12px;
+	background: #333;
+	border-radius: 40%;
+	transform: translate(12px, 10px);
+	box-shadow: 0 1px 0 0 #fff, 0 5px 0 0 #333,
+				0 6px 0 0 #fff, 0 10px 0 0 #333,
+				0 11px 0 0 #fff, 0 15px 0 0 #333;
+}
