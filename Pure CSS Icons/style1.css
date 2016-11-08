@@ -1059,7 +1059,7 @@ div{
 	border: 2px solid;
 	border-color: transparent #333 #333 #333;
 	border-radius: 0 0 20px 20px;
-	transform: translate(13px, 5px);
+	transform: translate(15px, 7px);
 }
 .funnel::before{
 	content: "";
