@@ -68,6 +68,49 @@
 	transform: translate(28px, -6px);
 }
 
+.cloud-download{
+	width: 45px;
+	height: 15px;
+	background: #333;
+	border-radius: 8px;
+	transform: translate(2px, 25px);
+}
+.cloud-download::before{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: #333;
+	border-radius: 50% 50% 0 0;
+	transform: translate(5px, -11px);
+}
+.cloud-download::after{
+	content: "";
+	position: absolute;
+	background: #333;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	transform: translate(28px, -6px);
+}
+.cloud-download1{
+	position: absolute;
+	width: 4px;
+	height: 10px;
+	background: #fff;
+	transform: translate(22px, 5px);
+}
+.cloud-download1::before{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 7px;
+	border-style: solid;
+	border-color: #fff transparent transparent transparent;
+	transform: translate(-5px, 10px);
+}
+
 .pencil{
 	width: 0.5px;
 	height: 45px;
@@ -155,18 +198,168 @@
 				0 11px 0 0 #fff, 0 15px 0 0 #333;
 }
 
-.folder{
-	width: 36px;
-	height: 22px;
+.film{
+	width: 22px;
+	height: 28px;
+	border-width: 4px 10px;
+	border-style: solid;
+	border-color: #333;
+	border-radius: 5px / 3px;
+	transform: translate(4px, 7px);
+}
+.film::before{
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	transform: translate(-7.5px, 0px);
+	box-shadow: 0 7.5px 0 0 #fff, 0 15.5px 0 0 #fff, 0 23px 0 0 #fff,
+				32px 0 0 0 #fff, 32px 7.5px 0 0 #fff,
+				32px 15.5px 0 0 #fff, 32px 23px 0 0 #fff;
+}
+.film::after{
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 3px;
 	background: #333;
-	transform: translate(7px, 14px);
+	transform: translate(0px,12.5px);
+}
+
+.glass{
+	width: 0;
+	height: 0;
+	border: 20px solid;
+	border-color: #333 transparent transparent transparent;
+	border-radius: 6px;
+	transform: translate(5px, 7px);
+}
+.glass::before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	background: #333;
+	transform: translate(-1px, -6px);
+}
+.glass::after{
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 3px;
+	background: #333;
+	transform: translate(-12px, 14px);
+}
+
+.filter{
+	width: 0;
+	height: 0;
+	border: 20px solid;
+	border-color: #333 transparent transparent transparent;
+	border-radius: 6px;
+	transform: translate(5px, 6px);
+}
+.filter::before{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 25px;
+	background: #333;
+	transform: skew(30deg) rotate(30deg) translate(-1.5px, -6px);
+}
+
+.laptop{
+	width: 30px;
+	height: 18px;
+	border: 2px solid #333;
+	border-radius: 3px;
+	transform: translate(8px, 12px);
+}
+.laptop::before{
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 3px;
+	background: #333;
+	border-radius: 3px / 1px;
+	transform: translate(-5px, 20px);
+}
+
+.moon{
+	width: 35px;
+	height: 35px;
+	background: #333;
+	border-radius: 50%;
+	transform: translate(12px, 7px);
+}
+.moon::before{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 35px;
+	background: #fff;
+	border-radius: 50%;
+	transform: rotate(-20deg) translate(13px, 0px);
+}
+
+.ticket{
+	width: 25px;
+	height: 35px;
+	background: #333;
+	border-radius: 4px;
+	transform: rotate(45deg) translate(14px, -3px);
+}
+.ticket::before{
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 16px;
+	border: 1px solid #fff;
+	transform: translate(7px, 7px);
+}
+.ticket::after{
+	content: "";
+	position: absolute;
+	width: 6px;
+	height: 6px;
+	background: #fff;
+	border-radius: 50%;
+	transform: translate(9.5px, -2px);
+	box-shadow: 0 33px 0 0 #fff;
+}
+
+.memory{
+	width: 25px;
+	height: 36px;
+	background: #333;
+	transform: translate(13px, 7px);
+}
+.memory::before{
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #333;
+	transform: translate(-3px, 1px);
+	box-shadow: 0 6px 0 0 #333, 0 12px 0 0 #333, 0 18px 0 0 #333,
+				0 24px 0 0 #333, 0 30px 0 0 #333,
+				26px 0 0 0 #333, 26px 6px 0 0 #333, 26px 12px 0 0 #333,
+				26px 18px 0 0 #333, 26px 24px 0 0 #333, 26px 30px 0 0 #333;
+}
+
+.folder{
+	width: 40px;
+	height: 25px;
+	background: #333;
+	transform: translate(5px, 15px);
+	border-radius: 1px;
 }
 .folder::before{
 	content: "";
 	position: absolute;
 	width: 5px;
-	height: 0;
-	border-width: 4px 5px 4px 5px;
+	border-width: 4px 5px;
 	border-style: solid;
 	border-color: transparent transparent #333 transparent;
 	transform: translate(0, -8px);
